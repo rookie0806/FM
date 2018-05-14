@@ -1,36 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  </head>
-    <meta charset="utf-8">
-    <meta name="author" content="Rookie0806">
-    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
-    <meta name="description" content="Welcome to my Page">
-    <title>This is Title</title>
-  <style>
-    .box{
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <title>Friends</title>
+</head>
+<body>
+  <header>
+    <div class="header__top">
+      <div class="header__column">
+        <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+        <i class="fa fa-wifi"></i>
+      </div>
+      <div class="header__column">
+        <span class="heaer__time">18:38</span>
+      </div>
+      <div class="header__column">
+        <span class="header__battery">100%</span>
+        <i class="fa fa-battery-full"></i>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__column">
+        <span class="header__text">Manage</span>
+      </div>
+      <div class="header__column">
+        <span class="header__text">Friends <span class="header__number">1</span></span>
+      </div>
+      <div class="header__column">
+        <i class="fa fa-cog"></i>
+      </div>
+    </div>
 
-      padding: 10%;
-      width: 100px;
-      height : 100px;
-      background: red;
-      animation: 1.5s animate infinite ease-in-out;
-    }
-    @keyframes animate {
-      0%{
-        transform: none;
-      }
-      50%{
-        transform: rotate(1turn) scale(.5, .5);
-      }
-      100%{
-        transform:none;
-      }
-    }
-  </style>
-
-  <body>
-    <div class="box"></div>
-  </body>
-
+  </header>
+  <main class="friends">
+    <div class="search-bar">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Find friends, chats, Plus Friends">
+    </div>
+    <section class="friends__section">
+      <header class="friends__section-header">
+        <h6 class="friends__section-title">My Profile</h6>
+      </hedaer>
+      <div class="friends__section-rows">
+        <div class="friends-row">
+          <img src="" alt="">
+          <span class="friends__section-name">김동휘</span>
+        </div>
+        <div class="friends-row">
+          <img src="" alt="">
+          <span class="friends__section-name">Friends's Names Display</span>
+        </div>
+      </div>
+    </section>
+    <section class="friends__section">
+      <header class="friends__section-header">
+        <h6 class="friends__section-title">Friends</h6>
+      </header>
+      <div class="friends__section-rows">
+        <div class="friends-row">
+          <div class="friends__section-column">
+            <img src="" alt="">
+            <span class="friends__section-name">김동휘</span>
+          </div>
+          <div class="friends__section-tagline">상메</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <nav class="tab bar">
+    <a href="index.html" class="tab-bar__tab tab-bar__tab--selected">
+      <i class="fa fa-user"></i>
+      <span class="tab-bar__title">Friends</span>
+    </a>
+    <a href="chats.html" class="tab-bar__tab">
+      <i class="fa fa-comment"></i>
+      <span class="tab-bar__title">Chats</span>
+    </a>
+    <a href="find.html" class="tab-bar__tab">
+      <i class="fa fa-search"></i>
+      <span class="tab-bar__title">Find</span>
+    </a>
+    <a href="more.html" class="tab-bar__tab">
+      <i class="fa fa-ellipsis-h"></i>
+      <span class="tab-bar__title">More</span>
+    </a>
+  </nav>
+</body>
 </html>
