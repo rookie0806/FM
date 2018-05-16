@@ -1,0 +1,65 @@
+.top-header--transparent {
+  background-color: transparent;
+}
+
+.profile .profile__header {
+  height: 80vh;
+  background-image: url("http://verdewall.com/wp-content/uploads/2016/08/Background-Images-3GF.jpg");
+  width: 100%;
+  position: relative;
+  top: -60px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__header .profile__header-container {
+  text-align: center;
+  position: relative;
+  bottom: -80px;
+}
+
+.profile__header-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.profile .profile__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__container input {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.profile__actions {
+  display: flex;
+  cursor: pointer;
+}
+
+.profile__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.profile__action-circle {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 50%;
+  color: #523737;
+  margin-bottom: 15px;
+}
+
+.profile__action-title {
+  font-size: 10px;
+  font-weight: 600;
+}
